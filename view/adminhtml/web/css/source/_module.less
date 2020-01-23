@@ -1,0 +1,29 @@
+/*
+ * Copyright © Magenius.Team. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+
+// Font
+@font-face {
+    font-family: "magenius-icons";
+    src: url("@{baseDir}fonts/magenius/magenius-icons.eot");
+    src: url(".@{baseDir}fonts/magenius/magenius-icons.eot?#iefix") format("embedded-opentype"),
+    url("@{baseDir}fonts/magenius/magenius-icons.woff2") format("woff2"),
+    url("@{baseDir}fonts/magenius/magenius-icons.woff") format("woff"),
+    url(".@{baseDir}fonts/magenius/magenius-icons.ttf") format("truetype"),
+    url(".@{baseDir}fonts/magenius/magenius-icons.svg#magenius-icons") format("svg");
+    font-style: normal;
+    font-weight: 400;
+}
+
+// Menu
+.admin__menu {
+    #menu-magenius-core-menu {
+        > a {
+            &:before {
+                font-family: "magenius-icons" !important;
+                content: '\ea01' !important;
+            }
+        }
+    }
+}
