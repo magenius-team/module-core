@@ -9,13 +9,12 @@ declare(strict_types=1);
 namespace Magenius\Core\Controller\Adminhtml\Messages;
 
 use Magento\Backend\App\Action;
-use Magento\Framework\App\Action\HttpPostActionInterface;
 use Magento\Framework\Controller\ResultFactory;
 use Magento\Framework\Controller\ResultInterface;
 use Magento\Framework\Message\MessageInterface;
 use Magento\Framework\Serialize\Serializer\Json;
 
-class GetMessages extends Action implements HttpPostActionInterface
+class GetMessages extends Action
 {
     const ADMIN_RESOURCE = "Magenius_Core::admin_messages";
     /**
