@@ -9,8 +9,10 @@ Core module provide specific functional used in dependent modules
 
 ### Requirements
 
-- PHP `~7.0.13||~7.1.3||~7.2.0||~7.3.0`
-- Magento 2.2.x||2.3.x
+- Magento version:
+  * 2.2.x
+  * 2.3.x
+  * 2.4.x
 
 ### Installation guide
 
