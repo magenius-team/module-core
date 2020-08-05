@@ -59,15 +59,12 @@ class GetMessages extends Action
             MessageInterface::TYPE_SUCCESS => []
         ];
 
-        $items = $this->messageManager->getMessages()->getItems();
+        $items = $this->messageManager->getMessages(true)->getItems();
         foreach ($items as $message) {
             if (isset($messages[$message->getType()])) {
                 $messages[$message->getType()][] = $message->getText();
             }
         }
-
-        /* Clean message history */
-        $this->messageManager->getMessages(true);
 
         return $messages;
     }
