@@ -8,9 +8,7 @@
     <acl>
         <resources>
             <resource id="Magento_Backend::admin">
-                <resource id="Magenius_Core::menu" title="Magenius" translate="title" sortOrder="50">
-                    <resource id="Magenius_Core::admin_messages" title="Ajax Message Retriever" translate="title" sortOrder="50"/>
-                </resource>
+                <resource id="Magenius_Core::menu" title="Magenius" translate="title" sortOrder="50"/>
             </resource>
         </resources>
     </acl>
